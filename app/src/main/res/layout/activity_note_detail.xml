@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaiamount.module_user.notes.NoteDetailActivity">
+    <WebView
+        android:id="@+id/note_wenview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/notes_detail_bottom"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height">
+        <ImageView
+            android:id="@+id/notes_detail_back"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/notes_detail_zhuanzai"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/notes_detail_comment"
+                android:src="@mipmap/note_toolbar_ic_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/notes_num"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/color_ff5773"
+                android:layout_alignRight="@id/notes_detail_comment"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_toLeftOf="@+id/notes_detail_share"
+            android:id="@+id/notes_detail_zhuanzai"
+            android:src="@mipmap/note_toolbar_ic_reprinted"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/notes_detail_share"
+            android:src="@mipmap/note_toolbar_ic_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <View
+            android:background="@color/a1a1a1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </RelativeLayout>
+</RelativeLayout>

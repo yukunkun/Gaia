@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="type">
+        <item>All</item>
+        <item>Gaia</item>
+        <item>4K</item>
+        <item>FEE</item>
+        <item>FREE</item>
+    </array>
+    <array name="sort">
+        <item>Default</item>
+        <item>Upload</item>
+        <item>Play</item>
+        <item>Concern</item>
+        <item>Comments</item>
+        <item>Download</item>
+    </array>
+    <array name="video_type">
+        <item>all</item>
+        <item>samples</item>
+        <item>clips</item>
+        <item>scenery</item>
+        <item>short</item>
+        <item>newsreel</item>
+        <item>advert</item>
+        <item>MV</item>
+        <item>FPV</item>
+        <item>course</item>
+        <item>art</item>
+        <item>family</item>
+        <item>others</item>
+    </array>
+
+    <string-array name="country">
+        <item>China</item>
+        <item>Hongkong</item>
+        <item>Macao</item>
+        <item>Taiwan</item>
+        <item>U.S.A</item>
+        <item>Canada</item>
+        <item>Japan</item>
+        <item>Korea</item>
+        <item>Singapore</item>
+        <item>Malaysia</item>
+        <item>Thailand</item>
+        <item>India</item>
+        <item>U.K</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Spain</item>
+        <item>Portugal</item>
+        <item>Sweden</item>
+        <item>Czechia</item>
+        <item>Switzerland</item>
+        <item>Hungary</item>
+        <item>Austria</item>
+        <item>Belgium</item>
+        <item>Denmark</item>
+        <item>Netherlands</item>
+        <item>Norway</item>
+        <item>Greece</item>
+        <item>Ireland</item>
+        <item>Poland</item>
+        <item>Russia</item>
+        <item>Australia</item>
+        <item>New Zealand</item>
+        <item>Iran</item>
+        <item>Turkey</item>
+        <item>U.A.E</item>
+        <item>Mexico</item>
+        <item>Brazil</item>
+        <item>Argentina</item>
+        <item>Nigeria</item>
+        <item>Egypt</item>
+    </string-array>
+
+    <array name="account">
+        <item>\@cxria.com</item>
+        <item>\@gmail.com</item>
+        <item>\@yahoo.com</item>
+        <item>\@163.com</item>
+    </array>
+
+    <string-array name="country_code">
+        <item>+86</item>
+        <item>+852</item>
+        <item>+853</item>
+        <item>+886</item>
+        <item>+1</item>
+        <item>+1</item>
+        <item>+81</item>
+        <item>+82</item>
+        <item>+65</item>
+        <item>+60</item>
+        <item>+66</item>
+        <item>+91</item>
+        <item>+44</item>
+        <item>+33</item>
+        <item>+49</item>
+        <item>+39</item>
+        <item>+34</item>
+        <item>+351</item>
+        <item>+46</item>
+        <item>+420</item>
+        <item>+41</item>
+        <item>+36</item>
+        <item>+43</item>
+        <item>+32</item>
+        <item>+45</item>
+        <item>+31</item>
+        <item>+47</item>
+        <item>+30</item>
+        <item>+353</item>
+        <item>+48</item>
+        <item>+7</item>
+        <item>+61</item>
+        <item>+64</item>
+        <item>+98</item>
+        <item>+90</item>
+        <item>+784</item>
+        <item>+52</item>
+        <item>+55</item>
+        <item>+54</item>
+        <item>+234</item>
+        <item>+20</item>
+    </string-array>
+
+    <string-array name="work_info_list">
+        <item>name</item>
+        <item>photography</item>
+        <item>剪辑</item>
+        <item>clip</item>
+        <item>director</item>
+        <item>models</item>
+        <item>lens</item>
+        <item>address</item>
+    </string-array>
+
+   <!-- <string-array name="choose_categroy">
+        <item>test samples</item>
+        <item>clip toning</item>
+        <item>scenery travel</item>
+        <item>Short film</item>
+        <item>Commercial advertising</item>
+        <item>MV</item>
+        <item>aerial</item>
+        <item>The tutorial</item>
+    </string-array>-->
+
+    <string-array name="download_set_parent">
+        <item>允许用户免费下载</item>
+        <item>允许用户付费下载</item>
+    </string-array>
+
+    <!--必须和api文档的顺序一致-->
+    <string-array name="work_pool">
+        <item>all</item>
+        <item>test samples</item>
+        <item>scenery travel</item>
+        <item>scenery travel</item>
+        <item>Short film</item>
+        <item>record</item>
+        <item>Commercial advertising</item>
+        <item>MV</item>
+        <item>aerial</item>
+        <item>The tutorial</item>
+        <item>experiment of art </item>
+        <item>Family wedding </item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="user_info">
+        <item>address</item>
+        <item>nickName</item>
+        <item>gender</item>
+        <item>signature</item>
+        <item>job</item>
+        <item>area</item>
+        <item>profile</item>
+        <item>email</item>
+        <item>phone</item>
+    </string-array>
+
+    <string-array name="job_list">
+        <item>director</item>
+        <item>writers</item>
+        <item>photographer</item>
+        <item>film cutter</item>
+        <item>colorist</item>
+        <item>juicers</item>
+        <item>enthusiasts</item>
+    </string-array>
+
+    <string-array name="personal_list_items">
+        <item>draft_script</item>
+        <item>@string/creations</item>
+        <item>@string/special</item>
+        <item>@string/circle</item>
+        <item>@string/collection</item>
+    </string-array>
+
+    <string-array name="personal_user_info_list">
+        <item>basic_settings</item>
+        <item>set avatar</item>
+        <item>nickName</item>
+        <item>gender</item>
+        <item>job</item>
+        <item>area</item>
+        <item>signature</item>
+        <item>profile</item>
+        <!--<item>account setting</item>
+        <item>other settings</item>-->
+        <!--<item>个性域名</item>-->
+        <!--<item>安全设置</item>-->
+        <!--<item>reset password</item>
+        <item>Payment account </item>
+        <item>verify phone number</item>
+        <item>verify email</item>-->
+        <!--<item>第三方登陆验证关联</item>-->
+    </string-array>
+    <string-array name="creator_collection">
+        <item>@string/works</item>
+        <item>@string/material</item>
+        <item>@string/collage</item>
+        <!--<item>@string/script</item>-->
+    </string-array>
+    <string-array name="tip_off">
+        <item>Contains illegal content </item>
+        <item>Infringement of rights and interests of others </item>
+        <item>Vulgar content of unhealthy </item>
+    </string-array>
+    <string-array name="collection_filter">
+        <item>all</item>
+        <item>4K</item>
+        <item>official recommend</item>
+        <item>free to dwonload</item>
+        <item>pay to download </item>
+    </string-array>
+    <string-array name="collection_sort">
+        <item>default</item>
+        <item>newest</item>
+        <item>most playback</item>
+        <item>most collection</item>
+        <item>Most discussion </item>
+        <item>most download</item>
+    </string-array>
+ <!--   <string-array name="message_type_list">
+        <item>@string/private_message</item>
+        <item>Comment message</item>
+        <item>My concern</item>
+        <item>Related to me</item>
+        <item>Group dynamics</item>
+        <item>official notification </item>
+    </string-array>-->
+
+    <!--设置银行账户-->
+    <string-array name="bank_account">
+        <item></item>
+        <item>default_payment</item>
+        <item></item>
+        <item>But the bank </item>
+        <item>Bank card number </item>
+        <item>The payee name </item>
+        <item>Bank branch </item>
+    </string-array>
+    <string-array name="banks">
+        <item>CMBC</item>
+        <item>CEB</item>
+        <item>China citic bank </item>
+        <item>Shanghai pudong development bank </item>
+        <item>Guangdong development bank </item>
+        <item>Huaxia bank </item>
+        <item>CCB</item>
+        <item>Bank of communications </item>
+        <item>The bank of China</item>
+        <item>China minsheng banking corp</item>
+        <item>Societe general </item>
+        <item>Ping an bank</item>
+        <item>Agricultural bank of China</item>
+        <item>The postal savings bank of China</item>
+    </string-array>
+    <string-array name="pay_way">
+        <item>银行卡</item>
+        <item>支付宝</item>
+    </string-array>
+
+    <string-array name="account_type">
+        <item>@string/phone</item>
+        <item>@string/email</item>
+    </string-array>
+    <string-array name="creator_group_sort">
+        <item>Recommended degree</item>
+        <item>Members of the quantity </item>
+        <item>Amount of work </item>
+        <item>Creation time </item>
+    </string-array>
+    <string-array name="group_admin_power">
+        <item>Review the new members </item>
+        <item>Clean up the team </item>
+        <item>Removal of members </item>
+        <item>Create album management team </item>
+    </string-array>
+    <string-array name="group_select_video">
+        <item>@string/works</item>
+        <item>@string/material</item>
+        <item>@string/collage</item>
+        <item>@string/home_juben</item>
+    </string-array>
+
+    <string-array name="album_type">
+        <item>@string/works</item>
+        <item>@string/material</item>
+        <item>@string/collage</item>
+<!--
+        <item>@string/script</item>
+-->
+    </string-array>
+
+    <string-array name="work_sort">
+        <item>default</item>
+        <item>newest</item>
+        <item>most play</item>
+        <item>most collection</item>
+        <item>most comment</item>
+        <item>most download</item>
+    </string-array>
+    <integer-array name="progressColors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+    <!--会话tablayout、-->
+    <string-array name="sec_tab">
+        <item>conversation</item>
+        <item>contact</item>
+        <item>group</item>
+    </string-array>
+    <string-array name="my_group">
+        <item>created</item>
+        <item>managed</item>
+        <item>joined</item>
+    </string-array>
+    <string-array name="search">
+        <item>material</item>
+        <item>works</item>
+        <item>group</item>
+        <item>person</item>
+        <item>academy</item>
+<!--
+        <item>scripe</item>
+-->
+    </string-array>
+    <string-array name="circle">
+        <item>attention</item>
+        <item>fans</item>
+        <item>group</item>
+    </string-array>
+
+    <!--lhy:应用设置与帮助-->
+    <string-array name="language">
+        <item>Chinese</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="language_value">
+        <item>Chinese</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="definition_values">
+        <item>720P</item>
+        <item>1080P</item>
+        <item>2K</item>
+        <item>4K</item>
+    </string-array>
+    <string-array name="definition">
+        <item>720P</item>
+        <item>1080P</item>
+        <item>2K</item>
+        <item>4K</item>
+    </string-array>
+    <!--/lhy-->
+    <!--主页列表类型-->
+    <string-array name="home_list_type">
+        <item>Recommended works</item>
+        <item>Recommended material</item>
+        <item>Recommended academy</item>
+    </string-array>
+
+    <string-array name="academy_tablayout">
+        <item>introduction</item>
+        <item>Catalog</item>
+          <item>evaluate</item>
+    </string-array>
+    <string-array name="player_tabs">
+        <item>details</item>
+        <item>comment</item>
+        <item>recommend</item>
+    </string-array>
+</resources>

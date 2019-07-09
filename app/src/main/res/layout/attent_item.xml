@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/attention_head"
+        android:layout_marginLeft="15dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/attention_name"
+            android:text="gaiamount"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginRight="60dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_494949"
+            android:layout_toRightOf="@id/attention_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/attention_attent"
+            android:text="gaiamount"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:layout_marginRight="60dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_999999"
+            android:layout_below="@id/attention_name"
+            android:layout_toRightOf="@id/attention_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="2016.05.06"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_999999"
+            android:textSize="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/attention_cover"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <TextView
+        android:id="@+id/attention_content"
+        android:maxLines="2"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:text="这是我们的奥"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="17sp"
+        android:textColor="@color/color_494949"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/attention_detail"
+        android:maxLines="2"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:text="这是我们的奥"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_999999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <RelativeLayout
+        android:id="@+id/message_layout_like"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/message_like"
+            android:text="10"
+            android:gravity="center_vertical"
+            android:textSize="10sp"
+            android:drawableLeft="@mipmap/message_ic_like_n"
+            android:drawablePadding="5dp"
+            android:textColor="@color/color_a7a7a7"
+            android:layout_width="50dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/message_comment"
+            android:text="10"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/message_like"
+            android:textSize="10sp"
+            android:drawableLeft="@mipmap/message_ic_comment"
+            android:drawablePadding="5dp"
+            android:textColor="@color/color_a7a7a7"
+            android:layout_width="50dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/message_share"
+            android:textSize="10sp"
+            android:padding="8dp"
+            android:layout_toRightOf="@id/message_comment"
+            android:drawableLeft="@mipmap/message_ic_share"
+            android:textColor="@color/color_a7a7a7"
+            android:layout_width="35dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+</LinearLayout>

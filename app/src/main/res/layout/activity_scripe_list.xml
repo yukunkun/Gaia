@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.gaiamount.module_scripe.activity.ScripeListActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@mipmap/back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_default_height">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/title"
+                android:text="@string/script"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/color_494949"
+                android:textStyle="bold"
+                android:textSize="@dimen/toolbar_title_defalut_size"/>
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:background="@color/a1a1a1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_filter_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/commad_ic_extension"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/work_pool_tl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_default_height"
+                android:layout_toStartOf="@id/iv_filter_image"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabSelectedTextColor="@color/colorAccent"
+                app:tabTextAppearance="@style/tabLayoutTheme"
+                app:tabTextColor="@color/color_494949"/>
+
+        </RelativeLayout>
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/work_pool_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

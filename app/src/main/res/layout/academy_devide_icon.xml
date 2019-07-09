@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--kun-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/academy_all"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/collage_nav_btn_tougao"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:textColor="@color/color_494949"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="全部投稿"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/academy_mix_light"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/collage_nav_btn_ml"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:textColor="@color/color_494949"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="MiXing Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/academy_lesson"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/collage_nav_btn_kb"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:textColor="@color/color_494949"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="我的课表"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</RelativeLayout>

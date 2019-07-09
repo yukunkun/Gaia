@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@mipmap/bg_header_nav"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:transitionName="@string/avatar_transition"
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/ic_avatar_default"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"/>
+
+    <ImageView
+        android:background="@drawable/selector_general"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/ic_logout"
+        android:id="@+id/iv_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_user_avatar"
+        android:layout_marginBottom="8dp">
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_1">
+
+        <TextView
+            android:transitionName="@string/nick_name_transition"
+            android:id="@+id/nav_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_user_avatar"
+            android:layout_marginStart="15dp"
+            android:text="@string/user_logout"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

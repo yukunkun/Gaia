@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="270dp"
+              android:layout_height="125dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="@string/delete_admin"
+            android:textColor="@color/text_313333"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/remove_admin_cancel"
+            android:textSize="17sp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/text_157efb"/>
+
+        <Button
+            android:id="@+id/remove_admin_sure"
+            android:textSize="17sp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

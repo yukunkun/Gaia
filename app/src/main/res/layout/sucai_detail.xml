@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewss"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:background="@color/bg_white"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_default_height"
+            app:layout_behavior="com.gaiamount.util.FootView">
+            <View
+                android:background="@color/text_b1b1b1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <ImageView
+                android:id="@+id/tuwen_back"
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_more"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_collage_menu"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolbar_default_height" />
+        </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

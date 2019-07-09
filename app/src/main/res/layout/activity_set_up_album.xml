@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaiamount.module_creator.sub_module_album.SetUpAlbumActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        app:navigationIcon="@mipmap/back">
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create_special"
+            android:textColor="@color/text_313333"
+            android:textSize="16sp"/>
+
+    </android.support.v7.widget.Toolbar>
+<View
+    android:background="@color/about_us_line"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="6dp"
+                android:text="封面"
+                android:textColor="@color/text_313333"
+                android:textSize="10sp"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickToAddAlbumCover">
+
+                <ImageView
+                    android:id="@+id/add_album_cover"
+                    android:layout_width="150dp"
+                    android:layout_height="84dp"
+                    android:background="@drawable/shape_iv_add_album_cover"/>
+
+                <TextView
+                    android:id="@+id/cover_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:text="@string/add_cover"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="名称"
+                android:textColor="@color/text_313333"
+                android:textSize="10sp"/>
+
+            <EditText
+                android:background="@drawable/shape_group_more_details"
+                android:id="@+id/add_album_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="12sp"
+                android:paddingLeft="2dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/special_name_30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/special_power"
+                android:textColor="@color/text_313333"
+                android:textSize="10sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:id="@+id/add_album_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/public_video"/>
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/album_pwd_container"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/album_pwd"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="24dp"
+                        android:gravity="center"
+                        android:textColor="@color/text_313333"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/album_pwd_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/album_pwd"
+                        android:text="@string/password"
+                        android:textColor="@color/text_313333"
+                        android:textSize="11sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/intro"
+                android:textColor="@color/text_313333"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:background="@drawable/shape_group_more_details"
+                android:id="@+id/add_album_desc"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="top|start"
+                android:hint="@string/special_intro_hint"
+                android:textColor="@color/text_333"
+                android:textColorHint="@color/text_999"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

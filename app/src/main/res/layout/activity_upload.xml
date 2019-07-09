@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_com_toolbar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <FrameLayout
+                android:id="@+id/work_image_thumbnail_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/video_thumbnail"
+                    android:layout_width="190dp"
+                    android:layout_height="115dp"
+                    android:background="@mipmap/ic_video_thumbnai"
+                    android:clickable="true"
+                    android:onClick="clickThumbNail"/>
+
+
+                <ProgressBar
+                    android:id="@+id/upload_progress"
+                    android:layout_width="160dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:max="100"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/work_infos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/work_image_thumbnail_container"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/work_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:textColor="@color/text_313333"/>
+
+                <TextView
+                    android:id="@+id/isPublic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:textColor="@color/text_999"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/spec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:textColor="@color/text_999"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:textColor="@color/text_999"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:textColor="@color/text_999"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!--视频类型-->
+        <include layout="@layout/item_upload_video_type"/>
+        <!--选择分类-->
+        <include layout="@layout/item_upload_choose_category"/>
+
+        <include layout="@layout/item_upload_set_tag"/>
+
+        <!--<include layout="@layout/item_upload_add_to_special" />-->
+
+        <!--幕后故事-->
+        <include
+            layout="@layout/item_upload_back_story"/>
+        <!--转碼设置-->
+        <include
+            layout="@layout/item_update_change"/>
+        <!--确认上传-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/upload_btn"
+                style="@style/AppTheme.Widget.Btn.style4"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/upload_confirm"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upload_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_statement"
+                    android:textColor="@color/text_999"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:id="@+id/goto_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goto_detail"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

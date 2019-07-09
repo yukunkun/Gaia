@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <View
+       android:background="@color/about_us_line"
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"/>
+    <TextView
+        android:gravity="bottom"
+        android:text="AVC"
+        android:textSize="13sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/color_6e6e70"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_height="31dp" />
+    <RelativeLayout
+        android:id="@+id/real_free"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RadioGroup
+            android:id="@+id/avc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_264"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="H.264/AVC"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_265"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="H.265/AVC"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <View
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:gravity="bottom"
+        android:text="YUV(会员专属,非会员无效)"
+        android:layout_marginLeft="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/color_6e6e70"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_height="31dp" />
+    <RelativeLayout
+        android:id="@+id/real_pro_adv_1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RadioGroup
+            android:id="@+id/yuv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_420"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="YUV420 8bit"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_422"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="YUV422 10bit"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_423"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="YUV444 10bit"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+        </RadioGroup>
+        <!--<TextView
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/text_pro_adv_1"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="YUV 422/10 bit/CRF29"
+            android:textSize="17dp"
+            android:textColor="@color/color_494949"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/image_pro_adv_1"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_upload_checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />-->
+    </RelativeLayout>
+   <!-- <RelativeLayout
+        android:id="@+id/real_pro_adv_2"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/text_pro_adv_2"
+            android:layout_marginTop="0.5dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="YUV 422/10 bit/CRF23"
+            android:textSize="17dp"
+            android:textColor="@color/color_494949"
+            android:background="@color/white"
+            android:layout_marginBottom="0.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+        <ImageView
+            android:id="@+id/image_pro_adv_2"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_upload_checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+    </RelativeLayout>-->
+    <!--<RelativeLayout
+        android:id="@+id/real_pro_adv_3"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/text_pro_adv_3"
+            android:layout_marginTop="0.5dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="YUV 422/10 bit/CRF17"
+            android:textSize="17dp"
+            android:textColor="@color/color_494949"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+        <ImageView
+            android:id="@+id/image_pro_adv_3"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_upload_checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+    </RelativeLayout>-->
+    <View
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:gravity="bottom"
+        android:text="CRF(会员专属,非会员无效)"
+        android:layout_marginLeft="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/color_6e6e70"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_height="31dp" />
+    <RelativeLayout
+        android:id="@+id/real_bns_1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RadioGroup
+            android:id="@+id/crf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_17"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="crf17"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_23"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="crf23"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+            <RadioButton
+                android:button="@null"
+                android:drawableEnd="@drawable/ratio_button"
+                android:id="@+id/text_free_29"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="0.5dp"
+                android:text="crf29"
+                android:textSize="17dp"
+                android:textColor="@color/color_494949"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+        </RadioGroup>
+       <!-- <TextView
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/text_bns_1"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="YUV 444/10 bit/CRF29"
+            android:textSize="17dp"
+            android:textColor="@color/color_494949"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+        <ImageView
+            android:id="@+id/image_bns_1"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_upload_checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />-->
+    </RelativeLayout>
+<!--    <RelativeLayout
+        android:id="@+id/real_bns_2"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/text_bns_2"
+            android:layout_marginTop="0.5dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="YUV 444/10 bit/CRF23"
+            android:textSize="17dp"
+            android:textColor="@color/color_494949"
+            android:background="@color/white"
+            android:layout_marginBottom="0.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+        <ImageView
+            android:id="@+id/image_bns_2"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_upload_checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/real_bns_3"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/text_bns_3"
+            android:layout_marginTop="0.5dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="YUV 444/10 bit/CRF17"
+            android:textSize="17dp"
+            android:textColor="@color/color_494949"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+        <ImageView
+            android:id="@+id/image_bns_3"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_upload_checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp" />
+    </RelativeLayout>-->
+    <View
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

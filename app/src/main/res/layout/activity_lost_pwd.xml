@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:忘记密码-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              tools:context=".gaia_main.signin_signup.ResetPwdActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        app:navigationIcon="@mipmap/back"
+        toolbar:theme="@style/AppTheme.Toolbar">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_activity_reset_password"
+            android:textColor="@color/text_313333"
+            android:textSize="16sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--第一步-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="16dp"
+        android:id="@+id/step_1_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <Spinner
+            android:id="@+id/find_pwd_account_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/account_type"
+            android:prompt="@string/phone"/>
+
+        <EditText
+            android:id="@+id/find_pwd_account_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/find_pwd_account_type"
+            android:hint="@string/account_et"
+            android:padding="10dp"
+            android:textColorHint="@color/text_999"/>
+
+        <Button
+            android:id="@+id/step_1_next"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/find_pwd_account_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_btn_style4"
+            android:clickable="false"
+            android:text="@string/get_vertify_code"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <!--下一步-->
+    <RelativeLayout
+        android:id="@+id/step_2_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ver_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/find_pwd_edittext"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ver_code_et"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt"
+                android:layout_weight="6"
+                android:background="@drawable/find_pwd_edittext"
+                android:hint="@string/ver_et"
+                android:padding="10dp"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/text_light"/>
+
+            <Button
+                android:id="@+id/resend_ver_code_btn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:background="@drawable/main_btn_style"
+                android:clickable="false"
+                android:text="@string/resend_ver_code"
+                android:textColor="@color/disable"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/pwd_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ver_lay"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/find_pwd_edittext"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/new_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@null"
+                android:hint="@string/pwd_et"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="25dp"
+                android:singleLine="true"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/text_light"
+                android:textSize="14dp"/>
+
+            <CheckBox
+                android:id="@+id/sign_seen_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:button="@drawable/visibele_pwd_cb_style"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/find_pwd_done_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwd_lay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_get_vertify_code"
+            android:clickable="true"
+            android:text="@string/done"
+            android:textColor="@color/text_light"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

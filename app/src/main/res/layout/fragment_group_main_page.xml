@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--视频推荐-->
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+            <SurfaceView
+                android:id="@+id/group_rec_video"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"/>
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/cutter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_player_pause_bg"
+                android:scaleType="center"
+                android:src="@drawable/play"/>
+            <!--对客人-->
+            <include
+                android:id="@+id/group_rec_video_1_not_yet"
+                layout="@layout/layout_video_cutter_no_yet"/>
+            <!--对主人-->
+            <include
+                android:id="@+id/group_add_rec_video_1"
+                layout="@layout/layout_group_add_rec_video"/>
+
+
+        </FrameLayout>
+
+        <!--小视频-->
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@color/c7c7c7">
+
+                <include
+                    android:id="@+id/group_rec_video_2_not_yet"
+                    layout="@layout/item_video_cutter_no_yet_without_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/group_add_rec_video_2"
+                    layout="@layout/layout_group_add_rec_video_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/rec_video1_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/c7c7c7">
+
+                <include
+                    android:id="@+id/group_rec_video_3_not_yet"
+                    layout="@layout/item_video_cutter_no_yet_without_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/group_add_rec_video_3"
+                    layout="@layout/layout_group_add_rec_video_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/rec_video2_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <!--评论留言-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--评论-->
+            <include layout="@layout/layout_comment"/>
+
+            <com.gaiamount.widgets.improved.NOScrolledListView
+                android:id="@+id/group_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

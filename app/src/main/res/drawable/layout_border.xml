@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 边框颜色值 -->
+        <item android:state_pressed="false">
+            <shape android:shape="rectangle" >
+                <solid android:color="@color/gray_line"/>
+            </shape>
+        </item>
+
+
+    <!-- 主体背景颜色值  在item中的top与bottom各指定了1dp的边框线-->
+    <item  android:top="0dp" android:bottom="0.5dp" android:left="0dp" android:right="0dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+</layer-list>

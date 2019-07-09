@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:transitionName="@string/avatar_transition"
+        android:id="@+id/avatar"
+        android:layout_width="55dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/color_494949"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/creation_fans_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/nick_name"
+            android:layout_below="@id/nick_name"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_c6c6c6"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_line"/>
+
+
+</RelativeLayout>

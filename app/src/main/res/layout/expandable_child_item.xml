@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--kun expandablelistview的child-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/img_learn_speed"
+       android:layout_marginLeft="15dp"
+       android:layout_marginTop="18dp"
+       android:layout_width="12dp"
+       android:layout_height="12dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/child_content"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:textColor="@color/color_494949"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/try_watch"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_ff5773"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="15dp"
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

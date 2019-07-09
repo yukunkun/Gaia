@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".module_circle.CircleActionActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            app:tabMode="fixed"
+            android:gravity="center"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextAppearance="@style/tabLayoutTheme"
+            app:tabTextColor="@color/color_494949"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.design.widget.TabLayout>
+        <ImageView
+            android:src="@mipmap/back"
+            android:onClick="Back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

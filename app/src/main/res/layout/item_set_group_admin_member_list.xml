@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/member_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@mipmap/facebook_login_normal"/>
+
+        <TextView
+            android:id="@+id/member_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/member_avatar"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/member_avatar"
+            android:textColor="@color/text_333"/>
+
+        <TextView
+            android:id="@+id/member_job_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/member_nick"
+            android:layout_below="@id/member_nick"
+            android:textColor="@color/text_999"/>
+
+        <CheckBox
+            android:id="@+id/member_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

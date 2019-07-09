@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/notes_list_tag"
+            android:text=""
+            android:background="@color/color_ff5773"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="50dp"
+            android:layout_height="19dp" />
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/notes_list_title"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="17sp"
+                    android:textColor="@color/color_494949"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/notes_list_cont"
+                    android:layout_marginTop="18dp"
+                    android:textSize="12sp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textColor="@color/text_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="3"
+                android:layout_marginRight="25dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_avatar_default"
+                    android:id="@+id/notes_list_head"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/note_from"
+                android:text="From"
+                android:textSize="10sp"
+                android:textColor="@color/color_c5c5c5"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/notes_list_name"
+                android:text="清水"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/note_from"
+                android:textColor="@color/color_ff5773"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/notes_list_time"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="@color/color_c5c5c5"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+</RelativeLayout>

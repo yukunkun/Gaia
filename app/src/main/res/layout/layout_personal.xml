@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context=".module_user.personal.PersonalActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorAccent"
+            app:expandedTitleMarginBottom="-100dp"
+            app:expandedTitleMarginStart="70dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/personal_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:background="@mipmap/personal_bg"/>
+
+                <include
+                    layout="@layout/layout_personal_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="51dp"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/vector_drawable_ic_arrow_back_white___px"
+                app:popupTheme="@style/AppTheme.AppBarOverlay"
+                app:theme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+
+        <include layout="@layout/include_personal_tabs"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

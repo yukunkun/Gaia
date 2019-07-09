@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--kun 简介页面的head-->
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.gaiamount.widgets.improved.ReadMoreTextView
+            android:id="@+id/staff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_666"
+            app:trimLength="50"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_494949"
+            android:text="@string/academy_equipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/textview_software_use"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/academy_teacher"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_494949"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

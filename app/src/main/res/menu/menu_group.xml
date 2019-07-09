@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_edit_group"
+        android:orderInCategory="80"
+        android:title="修改资料"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_manger_group"
+        android:orderInCategory="100"
+        android:title="审核成员"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_exit_group"
+        android:orderInCategory="100"
+        android:title="解散小组"
+        app:showAsAction="never"
+        />
+</menu>

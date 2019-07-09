@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gaia_main.settings.about_us.UserSendAgreementActivity">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:onClick="SendAgreementBack"
+            android:background="?android:attr/actionBarItemBackground"
+            android:id="@+id/about_us_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/about_us"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/service_use_agreement"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:background="@color/a1a1a1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <ScrollView
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+       <!-- <TextView
+            android:id="@+id/user_text"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="13sp"
+            android:background="#ffffff"
+            android:singleLine="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />-->
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/item_upload_download_set"
+                style="@style/item_style"
+                android:onClick="clickDownloadSet">
+
+    <TextView
+        android:id="@+id/download_set_txt1"
+        style="@style/textAppearance_one"
+        android:text="@string/download_set"/>
+
+    <TextView
+        android:id="@+id/download_set_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/btn_more"/>
+
+    <ImageView
+        android:id="@+id/btn_more"
+        style="@style/item_right_pointer"/>
+
+</RelativeLayout>

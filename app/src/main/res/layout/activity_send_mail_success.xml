@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="45dp"
+    android:layout_marginStart="45dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".module_user.user_edit.SendMailSuccessActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="@string/email_has_send_to"
+        android:textColor="@color/text_666"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:text="@string/email_alreay_send"
+        android:textColor="@color/text_666"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/main_btn_style"
+        android:text="@string/finish"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/sign_how_to_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/how_to_reset"
+        android:textColor="@color/text_666" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:makeraman="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="77dp">
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            makeraman:riv_corner_radius="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_mix_light"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_mylist"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp" />
+
+            <TextView
+                android:text="Mix Light"
+                android:textSize="11sp"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:shadowColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            makeraman:riv_corner_radius="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_my_desk"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_mixinglight"
+            android:background="@drawable/shape_academy_devide"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp" />
+        <TextView
+            android:text="@string/my_lesson"
+            android:textSize="11sp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:shadowColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

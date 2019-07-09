@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--kun academy播放页-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaiamount.module_academy.activity.AcademyPlayActivity">
+    <SurfaceView
+        android:id="@+id/surfview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/lin_head_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/play_toobar"
+            android:background="@drawable/shape_academy_play_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_default_height"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_share_next"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@color/black40"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/textview_up"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_play_unpressed"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="@string/academy_lesson_up"
+            android:clickable="true"
+            android:layout_width="350dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/textview_next"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_play_pressed"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="@string/the_next_lesson"
+            android:clickable="true"
+            android:layout_width="350dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+    <ProgressBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/academy_progressBar"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center" />
+<!--底部控制布局-->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height"
+        android:id="@+id/lin_include"
+        android:layout_alignBottom="@id/surfview"
+        layout="@layout/academy_play_control"/>
+</RelativeLayout>

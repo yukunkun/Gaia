@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaiamount.module_academy.AcademyActivity">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height">
+        <LinearLayout
+            android:onClick="AcademyBack"
+            android:background="?android:attr/actionBarItemBackground"
+            android:id="@+id/academy_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/about_us"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/academy"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:onClick="AcademySearch"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/academy_search"
+            android:src="@mipmap/ic_search_red"
+            android:layout_width="44dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:background="@color/a1a1a1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/academy_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

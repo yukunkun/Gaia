@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7"
+    tools:context=".gaia_main.settings.about_us.CallUsActivity">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:onClick="CallUsBack"
+            android:id="@+id/about_us_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/about_us"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/call_us"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:background="@color/a1a1a1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+    <RelativeLayout
+        android:onClick="CallNum"
+        android:id="@+id/call_us_num"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/about_us"
+                android:text="@string/servicer_man_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_9a9a9a"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="@string/tel_gaiament_number"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:textSize="17sp"
+            android:textColor="@color/about_us"
+            android:gravity="center"
+            android:text="@string/weixin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:onClick="weiXinLoad"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/img_weixin"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <ImageView
+                        android:padding="12dp"
+                        android:src="@mipmap/ic_weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp" />
+                    <TextView
+                        android:text="@string/weixin_num"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="WeiBoLoad"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/img_weibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <ImageView
+                        android:padding="4dp"
+                        android:src="@mipmap/ic_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp" />
+                    <TextView
+                        android:text="@string/weibo_num"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo_dili"
+        android:layout_width="350dp"
+        android:layout_height="84dp" />
+    <TextView
+        android:textColor="@color/color_9a9a9a"
+        android:layout_marginTop="15dp"
+        android:textSize="10dp"
+        android:text="@string/gaiament_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/color_9a9a9a"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="10dp"
+        android:text="@string/youzheng_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+</LinearLayout>
+    
+</LinearLayout>

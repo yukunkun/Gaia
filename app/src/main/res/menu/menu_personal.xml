@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/action_edit_personal"
+          android:orderInCategory="100"
+          android:title="@string/edit_personal"
+          app:showAsAction="never"/>
+</menu>

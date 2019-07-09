@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:background="@color/white"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <com.gaiamount.widgets.improved.BounceListView
+        android:paddingBottom="40dp"
+        android:scrollbars="none"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:divider="@null"
+        android:id="@+id/player_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/player_comment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <include layout="@layout/gray_line"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/player_comment_input"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:textColorHint="@color/text_999"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="9"
+                android:paddingLeft="5dp"
+                android:background="@drawable/shape_edittext_border_black"
+                android:hint="@string/start_comment"/>
+
+            <ImageView
+                android:background="@drawable/selector_general_black"
+                android:id="@+id/player_comment_send"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="center"
+                android:tintMode="src_in"
+                android:tint="@color/colorAccent"
+                android:src="@mipmap/ic_send_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

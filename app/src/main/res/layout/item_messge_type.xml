@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/empty"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="15dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_line"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/message_type_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:id="@+id/message_type_title"
+            style="@style/MessageListTextApperance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/message_type_icon"
+            android:text="@string/title"/>
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/message_type_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:textSize="11sp"
+            android:background="@drawable/shape_im_backage"
+            android:gravity="center"
+            android:textColor="@color/white" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/unreadtag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:background="@mipmap/ic_message"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/pointer_gray_right"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:background="@color/gray_line"/>
+
+    </RelativeLayout>
+</LinearLayout>

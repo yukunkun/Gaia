@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.gaiamount.widgets.recyc.RecyclerViewHeader2
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewpager"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/adv" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@id/image1"
+                android:background="@mipmap/adv" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@id/image2"
+                android:background="@mipmap/adv" />
+        </RelativeLayout>
+    </com.gaiamount.widgets.recyc.RecyclerViewHeader2>
+
+</RelativeLayout>

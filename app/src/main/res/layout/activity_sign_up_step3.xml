@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/root_padding"
+                tools:context=".gaia_main.signin_signup.SignUpStep3Activity">
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/text_dark"/>
+
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/set_pwd"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="20"/>
+
+
+        <CheckBox
+            android:id="@+id/sign_seen_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/password"
+            android:layout_alignParentEnd="true"
+            android:button="@drawable/visibele_pwd_cb_style"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+    android:id="@+id/sign_job"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll"
+    android:layout_marginTop="16dp"
+    android:hint="@string/input_job"
+    android:singleLine="true" />
+
+    <Spinner
+        android:dropDownVerticalOffset="30dp"
+        android:layout_alignEnd="@id/sign_job"
+        android:layout_alignBottom="@id/sign_job"
+        android:id="@+id/choose_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:prompt="@null"
+        android:entries="@array/job_list"/>
+
+    <Button
+        android:id="@+id/sign_done"
+        style="@style/Main_Btn_Style"
+        android:layout_below="@id/sign_job"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:text="@string/done"/>
+
+</RelativeLayout>

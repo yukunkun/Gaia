@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".module_player.VideoActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frame_layouty"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:background="@color/black"
+        android:transitionName="@string/video_cover_transition">
+
+        <com.gaiamount.module_material.activity.video.GVideoMaterialView
+            android:id="@+id/gaia_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black90"
+            android:gravity="bottom">
+
+        </com.gaiamount.module_material.activity.video.GVideoMaterialView>
+
+        <View
+            android:id="@+id/left_cover"
+            android:background="@color/black"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"/>
+        <View
+            android:id="@+id/right_cover"
+            android:background="@color/black"
+            android:layout_width="1dp"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:layout_height="match_parent"/>
+        <View
+            android:id="@+id/top_cover"
+            android:visibility="gone"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_gravity="start"
+            android:layout_height="1dp"/>
+        <View
+            android:id="@+id/bottom_cover"
+            android:visibility="gone"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="1dp"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            android:background="@drawable/player_toolbar"
+            android:minHeight="48dp"
+            android:padding="0dp"
+            app:contentInsetStart="@dimen/content_insert_start"
+            app:navigationIcon="@mipmap/ic_player_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            >
+
+            <com.gaiamount.widgets.improved.MarqueeTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ProgressBar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+
+        <ViewStub
+            android:id="@+id/replay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_after_play_complete"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/video_player_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_default_height"
+            android:background="@color/bg_white"
+            app:tabSelectedTextColor="@color/tab_color"
+            app:tabTextColor="@color/text_666"/>
+        <!--
+                app:tabTextAppearance="@style/TextAppearance.AppCompat.Display4"
+        -->
+        <View
+            android:id="@+id/line"
+            android:layout_below="@id/video_player_tabs"
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/video_player_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"/>
+
+        <ProgressBar
+            android:id="@+id/fragment_progress"
+            android:layout_width="@dimen/cpb_default_width"
+            android:layout_height="@dimen/cpb_default_width"
+            android:clickable="true"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

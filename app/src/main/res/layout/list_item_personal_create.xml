@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--图片展示区域-->
+            <include
+                android:id="@+id/rl_1"
+                layout="@layout/item_work_pool_capacity"/>
+
+            <!--文字展示区域-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/work_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:lines="2"
+                    android:textColor="@color/text_666"
+                    android:textSize="14sp"
+
+                    android:textStyle="bold" />
+
+                <include layout="@layout/gray_line" />
+
+                <!--评分和播放次数-->
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/relative_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/work_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="4dp"
+                            android:drawableStart="@mipmap/ic_eye"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_999" />
+                        <TextView
+                            android:id="@+id/work_like"
+                            android:layout_toRightOf="@+id/work_count"
+                            android:layout_marginStart="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="4dp"
+                            android:drawableStart="@mipmap/command_ic_collect"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_999" />
+                        <TextView
+                            android:id="@+id/work_grade"
+                            android:layout_toRightOf="@+id/work_like"
+                            android:textColor="@color/text_999"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawablePadding="4dp"
+                            android:textSize="11sp"
+                            android:drawableStart="@mipmap/ic_grade" />
+                    </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/image_more"
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/more"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                </RelativeLayout>
+                </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+

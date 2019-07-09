@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <!--应用基础色-->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#ff5773</color>
+    <color name="light_red">#ea7074</color>
+
+    <color name="colorAccent_pressed" >#b42c43</color>
+    <color name="white_pressed">#f1f1f1</color>
+
+
+    <!--纯色-->
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="deep_blue">#6a7883</color>
+    <!--纯色带透明度-->
+    <color name="black10">#11000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black30">#4d000000</color>
+    <color name="black40">#99000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black60">#66000000</color>
+    <color name="black70">#b3000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="white50">#80ffffff</color>
+    <color name="white40">#66ffffff</color>
+    <color name="general_background">#00000000</color>
+    <color name="general_fade">#4de3e8e9</color>
+    <color name="general_fade_black">#bebebe</color>
+    <color name="pink90">#e6ff5773</color>
+
+    <!--字体颜色-->
+    <color name="text_light">#e6e6e6</color>
+    <color name="text_dark">#505050</color>
+    <color name="text_999">#999999</color>
+    <color name="text_666">#666666</color>
+    <color name="text_333">#333333</color>
+    <color name="text_tab_layout">#313333</color>
+    <!--tabColor-->
+    <color name="tab_color">#ff5773</color>
+
+    <color name="disable">#dcdcdc</color>
+    <color name="main_bg">#dcdcdc</color>
+    <color name="main_fg">#ff464c</color>
+    <color name="pager_bg">#e2d2d4</color>
+    <color name="pager_line">#4c000000</color>
+    <color name="list_handler_bg">#99000000</color>
+    <color name="dropdown_press">#ff464c</color>
+    <color name="dropdown_normal">#99000000</color>
+
+    <color name="sign_up_input_bg">#f2f2f2</color>
+
+    <color name="find_pwd_press">#429cff</color>
+    <color name="find_pwd_normal">#99429cff</color>
+    <color name="sidebar_background">#4c000000</color>
+
+    <color name="full_controller_bg">#cc262626</color>
+    <color name="full_sub_controller_bg">#d8262626</color>
+
+    
+
+    <color name="bg_red">#fd5774</color>
+
+    <!--card的线条-->
+    <color name="gray_line">#eaeaea</color>
+
+    <color name="dark_gray">#33000000</color>
+    <color name="bg_gray">#ebebeb</color>
+
+    <color name="text_title_gray">#142029</color>
+    <!--设置，上传等中的一个条目的背景色-->
+    <color name="item_bg_white">#E2ffffff</color>
+    <color name="layout_border">#c8c7cc</color>
+    <color name="text_dark_gray">#333333</color>
+    <color name="alpha80_bg_black">#cc000000</color>
+    <color name="item_bg_white90">#E6FFFFFF</color>
+
+    <!--背景色-->
+    <color name="bg_white">#ffffff</color>
+    <color name="toobar_bg_white">#E5ffffff</color>
+    <color name="bg_light">#f7f7f7</color>
+
+    <!--不能点击的button颜色-->
+    <color name="un_clickable">#fc91a2</color>
+    <color name="clickable">#ff464c</color>
+
+    <color name="ripple">#EFEFEF</color>
+    <color name="shadow">#a5b2c4</color>
+
+    <!--作品池-->
+    <color name="work_other">#bdbdbd</color>
+    <color name="upload_capacity">#8fc31f</color>
+    <color name="title_color">#313333</color>
+    <color name="work_grade_txt_color">#fff100</color>
+    <color name="star_yellow">#fff100</color>
+
+    <!--Player-->
+    <color name="comment_call_back_bg">#e3e8e9</color>
+    <color name="deep_gray_line">#c4c3c3</color>
+    <color name="ic_clear_bg">#e6e6e6</color>
+    <color name="player_download_option_bg">#616161</color>
+    <color name="chat_list_bg">#e3e8e9</color>
+    <color name="text_313333">#313333</color>
+    <color name="text_ff5773">#ff5773</color>
+    <color name="ced2d3">#ced2d3</color>
+    <color name="c7c7c7">#c7c7c7</color>
+    <color name="f5f2f7">#f5f2f7</color>
+    <color name="c8c7cc">#c8c7cc</color>
+    <color name="btn_bg_66a6ff">#66a6ff</color>
+    <color name="text_157efb">#157EFB</color>
+    <color name="iv_66000000">#66000000</color>
+    <color name="fafafa">#fafafa</color>
+
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+
+    <color name="color_494949">#494949</color>
+    <!--关于我们-->
+    <color name="about_us">#494949</color>
+    <color name="about_us_line">#dfdfdf</color>
+    <color name="sec_tishi">#b1b1b1</color>
+    <color name="back_all">#f7f7f7</color>
+    <color name="text_bbbbbb">#bbbbbb</color>
+    <color name="text_b1b1b1">#b1b1b1</color>
+    <color name="dfdfdf">#dfdfdf</color>
+    <!--lhy:浅灰色-->
+    <color name="color_9a9a9a">#9a9a9a</color>
+    <color name="color_c6c6c6">#c6c6c6</color>
+    <color name="a1a1a1">#a1a1a1</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_ff5773">#ff5773</color>
+    <color name="color_cacaca">#cacaca</color>
+    <color name="color_d1d1d1">#d1d1d1</color>
+    <color name="color_e9e7e6">#e9e7e6</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_c5c5c5">#c5c5c5</color>
+    <color name="color_403f3f">#403f3f</color>
+    <color name="color_8a8a8a">#8a8a8a</color>
+    <color name="color_ffea00">#ffea00</color>
+    <color name="color_009944">#009944</color>
+    <color name="color_42bd56">#42bd56</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_313333">#313333</color>
+    <color name="color_80BDC4C0">#80BDC4C0</color>
+    <color name="color_6e6e70">#6e6e70</color>
+    <color name="color_f4f5f6">#f4f5f6</color>
+    <color name="color_f1f1f2">#f1f1f2</color>
+    <color name="color_b2b2b2">#b2b2b2</color>
+    <color name="color_c7c7c7">#c7c7c7</color>
+    <color name="color_57ad68">#57ad68</color>
+    <color name="color_33bbff">#33bbff</color>
+    <color name="color_007aff">#007aff</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="color_a7a7a7">#a7a7a7</color>
+
+
+
+</resources>

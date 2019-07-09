@@ -1,0 +1,30 @@
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".module_player.fragments.PlayerColFrag">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/player_col_smile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ty_ic_msg_pass"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player_col_smile"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/collect_success"/>
+    </RelativeLayout>
+</RelativeLayout>

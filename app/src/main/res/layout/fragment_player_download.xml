@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/player_download_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:text="@string/download"
+        android:textColor="@color/text_333"/>
+
+    <ImageView
+        android:id="@+id/player_download_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@color/ic_clear_bg"
+        android:src="@drawable/vector_drawable_ic_clear_white___px"/>
+
+    <TextView
+        android:id="@+id/player_download_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_download_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:textColor="@color/text_999"
+        android:textSize="11sp"/>
+
+    <View
+        android:id="@+id/player_download_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/player_download_username"
+        android:background="@color/deep_gray_line"/>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_download_line1"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/player_download_option_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv1"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/player_download_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_999"/>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/player_download_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll_1"
+        android:background="@color/deep_gray_line"/>
+
+    <RelativeLayout
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/player_download_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/Main_Btn_Style"
+            android:id="@+id/player_download_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@mipmap/ic_cloud_download_white_24dp"
+            android:minHeight="32dp"
+            android:text="@string/download_immediately"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

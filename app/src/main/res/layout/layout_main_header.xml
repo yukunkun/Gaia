@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:transitionName="@string/video_cover_transition"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:canLoop="true"
+    />
+
+    <!--模块入口-->
+    <include layout="@layout/item_main_module"/>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="添加到"
+        android:textColor="@color/text_313333"
+        android:textSize="16sp"/>
+
+    <View
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/add_to_album"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:paddingTop="8dp"-->
+        <!--android:text="专辑"-->
+        <!--android:textColor="@color/text_313333"-->
+        <!--android:textSize="14sp"/>-->
+    <View
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/add_to_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/group"
+        android:textColor="@color/text_313333"
+        android:textSize="14sp"/>
+    <View
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <Button
+        android:id="@+id/cancel"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="@string/cancel"
+        android:textSize="15sp"
+        android:textColor="@color/btn_bg_66a6ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

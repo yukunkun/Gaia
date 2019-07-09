@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_upload_add_to_special"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/layout_border">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:text="@string/add_to_special"
+            style="@style/textAppearance_one" />
+
+        <ImageView
+            android:id="@+id/btn_more"
+            style="@style/item_right_pointer"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

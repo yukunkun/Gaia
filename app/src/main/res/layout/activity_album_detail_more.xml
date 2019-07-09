@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaiamount.module_creator.sub_module_album.AlbumDetailMoreActivity">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height">
+        <LinearLayout
+            android:onClick="albumback"
+            android:background="?android:attr/actionBarItemBackground"
+            android:id="@+id/about_us_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/about_us"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="更多资料"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="#a1a1a1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/album_group_name"
+        android:text="name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_494949"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/album_name_time"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:text="名字"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/album_introduce"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:text="详细"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

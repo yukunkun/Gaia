@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/academy_shape_image"
+            android:padding="0.5dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/academy_img_map"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+        <ImageView
+            android:src="@mipmap/recommend"
+            android:id="@+id/academy_recomend"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+        <RelativeLayout
+            android:layout_alignBottom="@id/academy_img_map"
+            android:background="@drawable/gradient30to0_black"
+            android:layout_width="match_parent"
+            android:layout_height="22dp">
+            <ImageView
+                android:id="@+id/academy_devide"
+                android:padding="4dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_marginRight="5dp"
+                android:id="@+id/academy_textview_learn"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/academy_mix_lesson_name"
+        android:text="我的"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_666"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/academy_mix_learn_num"
+            android:text="0人学习"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/for_free"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_42bd56"
+            android:id="@+id/academy_mix_price"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableLeft="@mipmap/ic_eye"
+            android:id="@+id/academy_mix_watchs"
+            android:drawablePadding="4dp"
+            android:textSize="10sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_8a8a8a"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+        <TextView
+            android:layout_toRightOf="@id/academy_mix_watchs"
+            android:id="@+id/academy_mix_likes"
+            android:textSize="10sp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/color_8a8a8a"
+            android:drawableLeft="@mipmap/command_ic_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+        <TextView
+            android:layout_toRightOf="@id/academy_mix_likes"
+            android:id="@+id/academy_mix_stars"
+            android:textSize="10sp"
+            android:layout_marginLeft="8dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_8a8a8a"
+            android:drawableLeft="@mipmap/ic_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+       <!-- <ImageView
+            android:id="@+id/academy_more"
+            android:src="@mipmap/more"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />-->
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:background="@color/back_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/academy_mix_head"
+            android:layout_marginLeft="5dp"
+            android:layout_width="21dp"
+            android:layout_height="21dp"/>
+        <TextView
+            android:id="@+id/academy_mix_username"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="10sp"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp" />
+    </LinearLayout>
+</LinearLayout>

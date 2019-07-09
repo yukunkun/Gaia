@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/shape_chat_popuwindow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#494949"
+        android:gravity="center"
+        android:text="发送照片"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <View
+        android:background="@color/text_b1b1b1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/choose_from_photo"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:textColor="#494949"
+        android:gravity="center"
+        android:text="从手机选择"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <View
+        android:background="@color/back_all"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/choose_from_carmer"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:textColor="#494949"
+        android:gravity="center"
+        android:text="拍照"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <View
+        android:background="@color/back_all"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/choose_quit"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:textColor="#9a9a9a"
+        android:gravity="center"
+        android:text="取消"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</LinearLayout>

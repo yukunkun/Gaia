@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+
+    android:orientation="vertical"
+    tools:context=".module_creator.sub_module_group.activities.GroupMoreActivity">
+    <RelativeLayout
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height">
+        <LinearLayout
+            android:onClick="groupback"
+            android:background="?android:attr/actionBarItemBackground"
+            android:id="@+id/about_us_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/about_us"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="更多资料"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="#a1a1a1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="@string/group_key"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_494949"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tag_1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tag_2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tag_3"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tag_4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tag_5"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <TextView
+                android:text="@string/group_introduce"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/color_494949"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/group_name_time"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:text="名字"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/group_introduce"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

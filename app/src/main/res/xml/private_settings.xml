@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/private_settings_real_name" android:defaultValue="false" android:key="@string/key_real_name"/>
+    <SwitchPreference android:title="@string/private_settings_gender" android:defaultValue="false" android:key="@string/key_gender"/>
+    <SwitchPreference android:title="@string/private_settings_phone" android:defaultValue="false" android:key="@string/key_phone"/>
+    <SwitchPreference android:title="@string/private_settings_email" android:defaultValue="false" android:key="@string/key_email"/>
+    <SwitchPreference android:title="@string/private_settings_qq" android:defaultValue="false" android:key="@string/key_qq"/>
+    <SwitchPreference android:title="@string/private_settings_weichat" android:defaultValue="false" android:key="@string/key_wechat"/>
+    <SwitchPreference android:title="@string/private_settings_sina_weibo" android:defaultValue="false" android:key="@string/key_weibo"/>
+    <SwitchPreference android:title="@string/private_settings_facebook" android:defaultValue="false" android:key="@string/key_facebook"/>
+    <SwitchPreference android:title="@string/private_settings_twitter" android:defaultValue="false" android:key="@string/key_twitter"/>
+</PreferenceScreen>

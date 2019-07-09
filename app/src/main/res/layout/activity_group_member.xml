@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy 小组成员界面-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    tools:context="com.gaiamount.module_creator.sub_module_group.activities.GroupMemberActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:minHeight="48dp"
+            app:navigationIcon="@mipmap/back">
+
+            <TextView
+                android:id="@+id/member_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="成员"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <GridView
+            android:id="@+id/member_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:horizontalSpacing="25dp"
+            android:numColumns="3"
+            android:verticalSpacing="24dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/controller"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_light"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:text="全选"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/cancel_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@id/select_all"
+            android:onClick="clickToCancelRemove"
+            android:text="@string/cancel"/>
+
+        <TextView
+            android:id="@+id/do_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_btn_radius_bg66a6ff"
+            android:gravity="center"
+            android:onClick="clickToRemoveMember"
+            android:text="@string/remove"
+            android:textColor="@color/text_light"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

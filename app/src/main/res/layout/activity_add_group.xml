@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy 添加小组-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:orientation="vertical"
+    tools:context=".module_creator.sub_module_group.activities.GroupCreateActivity">
+
+    <include layout="@layout/item_com_toolbar"/>
+
+
+    <FrameLayout
+        android:id="@+id/add_group_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_group_cover_stroke"
+                    android:onClick="addGroupCover">
+
+                    <ImageView
+                        android:id="@+id/add_group_cover_img"
+                        android:layout_width="150dp"
+                        android:layout_height="84dp"
+                        android:layout_gravity="center"
+                        android:background="@color/c7c7c7"/>
+
+                    <TextView
+                        android:id="@+id/add_group_cover_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/add_cover"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"/>
+                    <ProgressBar
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/add_group_cover_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="140dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progress"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_add_group_name"/>
+
+            <include layout="@layout/item_add_group_keywords"/>
+
+            <include layout="@layout/item_add_group_description"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

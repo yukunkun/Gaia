@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lin_down_control"
+        android:background="@drawable/shape_academy_play_down"
+        android:weightSum="13"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default_height">
+        <ImageView
+            android:id="@+id/image_pause"
+            android:padding="6dp"
+            android:src="@mipmap/play"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/textview_current_time"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekbar"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:thumbTint="@color/white"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview_all_time"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/textview_study_over"
+            android:textSize="11sp"
+            android:text="@string/study_over"
+            android:textColor="@drawable/selector_play_text"
+            android:background="@drawable/selector_play_unpressed"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="22dp" />
+        <TextView
+            android:id="@+id/textview_ratio"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:paddingRight="12dp"
+            android:id="@+id/image_voice"
+            android:src="@mipmap/ic_player_sound_normal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/toolbar_default_height" />
+        <ImageView
+            android:onClick="AcademyPlayBack"
+            android:src="@mipmap/ic_collapse_n"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolbar_default_height" />
+    </LinearLayout>
+</LinearLayout>

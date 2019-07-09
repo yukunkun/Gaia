@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg_light"
+    android:layout_height="match_parent"
+    tools:context=".module_user.user_edit.UserInfoActivity">
+
+
+
+    <ListView
+        android:background="@color/bg_white"
+        android:id="@+id/personal_user_info_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

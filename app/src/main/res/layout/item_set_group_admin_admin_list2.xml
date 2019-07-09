@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/admin_avatar"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/shape_empty_oval_40dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/admin_avatar"
+            android:id="@+id/examile_name"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="125dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="16sp"
+            android:textColor="@color/text_666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/member_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/admin_avatar"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/admin_avatar"
+            android:textColor="@color/text_333"/>
+
+        <TextView
+            android:id="@+id/member_job_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/member_nick"
+            android:layout_below="@id/member_nick"
+            android:textColor="@color/text_999"/>
+
+        <TextView
+            android:id="@+id/admin_set"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_btn_radius_bg66a6ff"
+            android:gravity="center"
+            android:text="@string/settings"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/admin_delete"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/admin_set"
+            android:background="@drawable/shape_btn_radius_accent"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

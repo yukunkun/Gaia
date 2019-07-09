@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:padding="4dp">
+
+        <CheckBox
+            android:id="@+id/download_item_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/download_cover"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/download_item_check"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/download_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/download_cover"
+            android:layout_toEndOf="@id/download_cover"/>
+
+
+        <ProgressBar
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:id="@+id/download_item_progress"
+            android:progressDrawable="@drawable/progress"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/download_item_name"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@id/download_cover"/>
+
+        <TextView
+            android:id="@+id/download_item_progress_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/download_cover"
+            android:layout_toEndOf="@id/download_cover"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/download_pause_start_play"
+            style="@style/btn_download"
+            android:layout_width="64dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/download_item_progress_desc"
+            android:layout_alignEnd="@id/download_item_progress"/>
+
+    </RelativeLayout>
+</LinearLayout>

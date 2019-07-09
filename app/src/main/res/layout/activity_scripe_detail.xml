@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    tools:context="com.gaiamount.module_scripe.activity.ScripeDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/scripe_deatil"/>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_width="280dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/all_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_494949"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <ListView
+            android:id="@+id/scripe_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

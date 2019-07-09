@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@mipmap/ic_avatar_default"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/avatar_transition"
+            app:riv_border_color="@color/white"
+            app:riv_border_width="1dp"
+            app:riv_oval="true"/>
+
+        <Button
+            android:id="@+id/add_attention"
+            style="@style/AppTheme.Widget.Btn.style3"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/add_attention"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/private_chat"
+            style="@style/AppTheme.Widget.Btn.style2"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/add_attention"
+            android:text="@string/private_chat"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unlogin_hint"
+                android:textColor="@color/color_494949"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:transitionName="@string/nick_name_transition"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image_is_vip"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/real_address"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/area"
+            android:textColor="@color/color_9a9a9a"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/user_infos"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:lines="1"
+            android:textColor="@color/color_c6c6c6"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/user_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            android:textColor="@color/color_494949"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

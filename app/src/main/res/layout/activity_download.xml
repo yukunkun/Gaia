@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy 下载页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".module_down_up_load.download.DownloadActivity">
+
+    <include layout="@layout/item_com_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light">
+
+
+        <ListView
+            android:id="@+id/download_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"/>
+
+        <LinearLayout
+            android:id="@+id/download_edit_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/download_edit_list"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/download_cancel_edit"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/download_item_delete"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除选中"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/download_selecte_all"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/empty_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_downloaded_video_yet"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>
+

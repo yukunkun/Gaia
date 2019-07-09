@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp">
+
+    <ImageView
+        android:transitionName="@string/video_cover_transition"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/academy_cover"
+        android:layout_width="142dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/bg_general"/>
+
+    <RelativeLayout
+        android:layout_alignBottom="@id/academy_cover"
+        android:layout_alignEnd="@id/academy_cover"
+        android:background="@drawable/gradient30to0_black"
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/academy_choice"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/academy_duration"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/academy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/academy_cover"
+        android:layout_toEndOf="@id/academy_cover"
+        android:maxLines="2"
+        android:textColor="@color/color_494949"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/academy_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/academy_title"
+        android:layout_toEndOf="@id/academy_cover"
+        android:maxLines="2"
+        android:textColor="@color/color_c6c6c6"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/academy_playcount_collcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/academy_cover"
+        android:layout_toEndOf="@id/academy_cover"
+        android:maxLines="2"
+        android:textColor="@color/color_c6c6c6"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/academy_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/academy_playcount_collcount"
+        android:maxLines="2"
+        android:textColor="@color/color_c6c6c6"
+        android:textSize="12sp"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="@dimen/margin16dp"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tipoff_reason"
+        android:textColor="@color/text_333"
+        android:textSize="16sp"/>
+
+    <ListView
+        android:id="@+id/tip_off_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view"/>
+
+    <EditText
+        android:id="@+id/tip_off_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip_off_list"
+        android:layout_margin="@dimen/margin16dp"
+        android:background="@drawable/shape_radius_edit_text_bg"
+        android:backgroundTint="@color/bg_light"
+        android:gravity="top"
+        android:minHeight="40dp"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip_off_detail">
+
+        <Button
+            android:id="@+id/tip_off_cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/text_999"/>
+
+        <Button
+            android:id="@+id/tip_off_ok"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_off_immediately"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+</RelativeLayout>

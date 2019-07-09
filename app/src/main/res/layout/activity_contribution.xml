@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.gaiamount.module_academy.academy_contribution.ContributionActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="@dimen/toolbar_default_height">
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_default_height">
+                <LinearLayout
+                    android:onClick="ContributeBack"
+                    android:id="@+id/academy_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toolbar_default_height">
+                    <ImageView
+                        android:src="@mipmap/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/about_us"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="@string/academy_contribution"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+               <!-- <ImageView
+                    android:onClick="SearchGloab"
+                    android:id="@+id/contribute_search"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_search_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />-->
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/a1a1a1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/contribute_tablayout"
+                app:tabGravity="fill"
+                android:layout_marginRight="35dp"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabSelectedTextColor="@color/colorAccent"
+                app:tabTextAppearance="@style/tabLayoutTheme"
+                app:tabTextColor="@color/text_bbbbbb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_default_height"/>
+            <ImageView
+                android:id="@+id/image_choice"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/commad_ic_extension"
+                android:layout_width="40dp"
+                android:layout_height="@dimen/toolbar_default_height" />
+        </RelativeLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/contribution_viewpager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

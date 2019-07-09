@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="270dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_new"
+        android:textSize="17sp"
+        android:textColor="@color/color_494949"
+        android:text="有新版本,是否更新?"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"/>
+    <View
+        android:layout_width="270dp"
+        android:layout_height="0.5dp"
+        android:background="@color/text_b1b1b1"/>
+
+<!--    <SeekBar
+        android:id="@+id/new_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:thumbTint="@color/color_ff5773"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"/>-->
+    <View
+        android:layout_width="270dp"
+        android:layout_height="0.5dp"
+        android:background="@color/text_b1b1b1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/new_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="@string/cancel"
+            android:textColor="@color/text_666"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_b1b1b1"/>
+
+        <Button
+            android:id="@+id/new_ok"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="更新"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+</LinearLayout>

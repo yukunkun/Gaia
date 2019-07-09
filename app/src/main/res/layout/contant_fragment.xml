@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--kun 目录页面-->
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+        <com.gaiamount.widgets.CustomExpandableListView
+            android:id="@+id/contant_expandableliustview"
+            android:layout_width="match_parent"
+            android:childDivider="@null"
+            android:divider="@null"
+            android:background="@color/white"
+            android:cacheColorHint="@color/general_background"
+            android:listSelector="@color/general_background"
+            android:groupIndicator="@null"
+            android:layout_height="match_parent"/>
+<!--
+    </LinearLayout>
+-->
+</android.support.v4.widget.NestedScrollView>

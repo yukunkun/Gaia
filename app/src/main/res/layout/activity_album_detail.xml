@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy 专辑详情-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module_creator.sub_module_album.AlbumDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            app:navigationIcon="@mipmap/back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:gravity="center"
+                android:textColor="@color/text_313333"
+                android:textSize="16sp"/>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line"/>
+
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/covers"
+                android:layout_width="180dp"
+                android:layout_height="101dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/album_cover"
+                    android:scaleType="centerCrop"
+                    android:layout_width="180dp"
+                    android:layout_height="101dp"
+                    app:riv_corner_radius="2dp"
+                    android:background="@drawable/shape_iv_add_album_cover"/>
+                <ImageView
+                    android:id="@+id/album_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/command_ic_clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/covers"
+                android:layout_width="match_parent"
+                android:layout_height="101dp">
+                <TextView
+                    android:id="@+id/album_desc"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里显示专辑简介"/>
+
+                <TextView
+                    android:id="@+id/album_time"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/about_us_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:background="@color/back_all"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@color/text_313333"/>
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

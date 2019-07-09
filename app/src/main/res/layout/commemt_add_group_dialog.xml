@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="270dp"
+    android:background="@drawable/shape_comment"
+    android:layout_height="wrap_content">
+        <TextView
+        android:textSize="17sp"
+        android:textColor="@color/text_333"
+        android:text="添加到"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+        <View
+            android:layout_width="270dp"
+            android:layout_height="0.5dp"
+            android:background="@color/about_us_line"/>
+        <ListView
+            android:id="@+id/comment_dialog_listview"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"/>
+
+        <include layout="@layout/gray_line"/>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/comment_dialog_grade_cancel"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:text="@string/cancel"
+                android:textColor="@color/color_ff5773"/>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:onClick="clickTag"
+        android:id="@+id/item_upload_set_tag"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/layout_border">
+
+        <TextView
+            android:id="@+id/set_tag_txt1"
+            android:text="@string/set_tag"
+            style="@style/textAppearance_one" />
+
+        <TextView
+            android:id="@+id/set_tag_txt2"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/pointer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/pointer2"
+            style="@style/item_right_pointer" />
+
+    </RelativeLayout>
+</LinearLayout>

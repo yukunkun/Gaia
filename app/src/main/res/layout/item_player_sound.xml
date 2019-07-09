@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+        android:background="@color/black60"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+            android:id="@+id/soundSeek"
+            android:layout_width="0dp"
+            android:splitTrack="false"
+            app:seekBarRotation="CW270"
+            android:thumb="@mipmap/ic_time_slid"
+            android:layout_height="150dp"/>
+    </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+</LinearLayout>

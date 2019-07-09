@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="标题">
+
+    <PreferenceCategory android:title="@string/setting_group_title_play">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_wifi_download"
+            android:title="@string/wifi_download"/>
+        <ListPreference
+            android:entries="@array/definition"
+            android:entryValues="@array/definition_values"
+            android:key="@string/key_definition"
+            android:title="@string/default_definition"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_group_title_advance">
+        <!--<ListPreference
+            android:defaultValue="@string/default_language_value"
+            android:entries="@array/language"
+            android:entryValues="@array/language_value"
+            android:key="@string/key_language"
+            android:title="@string/defalut_language"/>-->
+
+        <Preference
+            android:key="@string/pref_key_private_settings"
+            android:title="@string/private_settings">
+            <intent
+                android:action="com.gaia_main.settings.PrivateSettings"/>
+        </Preference>
+
+        <Preference
+            android:key="@string/pref_key_black_list"
+            android:title="@string/black_list">
+            <intent
+                android:targetClass="com.gaiamount.module_im.secret_chat.activity.KillFriActivity"
+                android:targetPackage="com.gaiamount"/>
+        </Preference>
+
+        <Preference
+            android:key="@string/key_clean_cache"
+            android:title="@string/clean_cache"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_group_title_other">
+
+        <!--<Preference
+            android:key="@string/key_make_grade"
+            android:title="@string/make_grade"/>-->
+
+        <Preference
+            android:key="@string/key_setting_about_us"
+            android:title="@string/settings_about_us">
+            <intent
+                android:targetClass="com.gaiamount.gaia_main.settings.about_us.AboutUsActivity"
+                android:targetPackage="com.gaiamount"/>
+        </Preference>
+
+        <Preference
+            android:enabled="true"
+            android:defaultValue="@string/defalut_value"
+            android:key="@string/key_version_update"
+            android:title="@string/version_update"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

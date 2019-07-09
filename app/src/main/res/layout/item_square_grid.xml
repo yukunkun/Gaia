@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_vertical_line"
+            android:layout_centerVertical="true"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/color_494949"
+            android:textStyle="bold"
+            android:text="@string/work_recommend"
+            android:textSize="13sp" />
+
+        <Button
+            android:textSize="10sp"
+            android:textColor="@color/color_ff5773"
+            android:text="@string/more"
+            android:background="@color/white"
+            android:id="@+id/btn_more"
+            android:layout_width="36dp"
+            android:layout_height="22dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+             />
+    </RelativeLayout>
+    <com.gaiamount.widgets.improved.NoScrolledGridView
+        android:background="@color/white"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:id="@+id/gv_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="270dp"
+    android:background="@drawable/shape_comment"
+    android:layout_height="wrap_content">
+        <TextView
+        android:textSize="17sp"
+        android:textColor="@color/text_333"
+        android:text="评论"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+        <View
+            android:layout_width="270dp"
+            android:layout_height="0.5dp"
+            android:background="@color/text_b1b1b1"/>
+
+        <EditText
+            android:padding="10dp"
+            android:id="@+id/dialog_grade_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="70dp"
+            android:hint="说说评论吧~"
+            android:gravity="top"
+            android:textColorHint="@color/color_999999"
+            android:background="@color/about_us_line"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black60"
+            android:textSize="12sp"/>
+
+        <include layout="@layout/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/comment_dialog_grade_cancel"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="@string/cancel"
+                android:textColor="@color/text_666"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/text_b1b1b1"/>
+
+            <Button
+                android:id="@+id/comment_dialog_grade_ok"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/ok"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+</LinearLayout>

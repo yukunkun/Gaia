@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaiamount.module_im.secret_chat.activity.ChatImageActivity">
+    <RelativeLayout
+        android:id="@+id/real"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:onClick="ChatBacks"
+            android:id="@+id/about_us_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_title"
+            android:textColor="@color/about_us"
+            android:textSize="17sp"
+            android:text="图 片"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="@color/a1a1a1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/ivShowImage"
+        android:layout_below="@id/real"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/module"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+    <!--作品池-->
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="wrap_content">
+        <!--素材-->
+        <LinearLayout
+            android:id="@+id/main_sucai"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/module_material"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:background="@mipmap/home_nav_ic_sucai"/>
+            <TextView
+                android:textColor="@color/color_494949"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/home_sucai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_works"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/module_work_pool"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@mipmap/home_nav_ic_zuop"/>
+            <TextView
+                android:textColor="@color/color_494949"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/home_works"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--创作者-->
+        <LinearLayout
+            android:id="@+id/main_creates"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/module_creator"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@mipmap/home_nav_ic_chuangzuo"/>
+            <TextView
+                android:textColor="@color/color_494949"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/home_creater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--学院-->
+        <LinearLayout
+            android:id="@+id/main_academy"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/module_collage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:background="@mipmap/home_nav_ic_school"/>
+            <TextView
+                android:textColor="@color/color_494949"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/home_academy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--剧本-->
+           <LinearLayout
+               android:visibility="gone"
+               android:id="@+id/main_scripe"
+               android:orientation="vertical"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:id="@+id/module_script"
+                   android:layout_width="45dp"
+                   android:layout_height="45dp"
+
+                   android:background="@mipmap/home_nav_ic_juben"/>
+               <TextView
+                   android:textColor="@color/color_494949"
+                   android:textSize="12sp"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center_horizontal"
+                   android:text="@string/home_juben"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/about_us_line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

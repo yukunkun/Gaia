@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy 创作者主页-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaiamount.module_creator.CreatorActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/item_com_toolbar"/>
+
+        <View
+            android:background="@color/a1a1a1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/creator_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_default_height"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorAccent"/>
+        <View
+            android:background="@color/about_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/creator_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.design.widget.CoordinatorLayout>

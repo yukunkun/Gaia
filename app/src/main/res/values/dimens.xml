@@ -1,0 +1,66 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <!--侧滑菜单的字体大小-->
+    <dimen name="nav_text_size">13sp</dimen>
+    <dimen name="mid_title">15sp</dimen>
+
+    <!--编辑用户资料-->
+    <dimen name="item_height">44dp</dimen>
+    <!--toolbar的高度-->
+    <dimen name="toolbar_default_height">48dp</dimen>
+    <!--toolbar的title默认字体大小-->
+    <dimen name="toolbar_title_defalut_size">17sp</dimen>
+
+    <!--登陆注册等大按钮的字体大小-->
+    <dimen name="main_btn_txt_size">16sp</dimen>
+    <dimen name="root_padding">16dp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+    <dimen name="small_elevation">1dp</dimen>
+    <dimen name="upload_work_info_name">14sp</dimen>
+    <dimen name="upload_work_info_value">13sp</dimen>
+    <dimen name="upload_edit_download_parent">16sp</dimen>
+    <dimen name="content_insert_start">0dp</dimen>
+    <dimen name="text_radius">1dp</dimen>
+    <dimen name="text_border_width">0.5dp</dimen>
+    <dimen name="btn_more_radius">2dp</dimen>
+    <dimen name="personal_item_text_size">18sp</dimen>
+    <dimen name="divider_line_height">1dp</dimen>
+    <dimen name="normal_vertical_spacing">8dp</dimen>
+    <dimen name="padding8dp">8dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="list_divider8dp">8dp</dimen>
+    <dimen name="list_divider1dp">1dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="tag_radius">2dp</dimen>
+    <dimen name="normal_horizental_spacing">8dp</dimen>
+    <!--搜索框的提示字体-->
+    <dimen name="search_hint">12sp</dimen>
+    <dimen name="radius_et_search">5dp</dimen>
+    <item name="signature_max_length" format="integer" type="integer">20</item>
+    <item name="max_comment_length" format="integer" type="integer">300</item>
+    <dimen name="shape_stroke_et_search">0.5dp</dimen>
+    <dimen name="textsize_normal">12sp</dimen>
+    <dimen name="btn_style2.radius">2dp</dimen>
+    <dimen name="btn_style2.stroke">1dp</dimen>
+    <dimen name="padding16">16dp</dimen>
+    <!--搜索框高度-->
+    <dimen name="global_search_et_height">30dp</dimen>
+    <!--搜索框的包裹层的高度-->
+    <dimen name="global_search_et_wrapper_height">48dp</dimen>
+    <!--tab栏的高度-->
+    <dimen name="tab_height">40dp</dimen>
+    <dimen name="replay_ic_width">40dp</dimen>
+    <!--cpb的默认宽度-->
+    <dimen name="cpb_default_width">48dp</dimen>
+</resources>

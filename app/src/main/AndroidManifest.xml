@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gaiamount">
+
+    <!-- IM Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- App Required -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".gaia_main.GaiaApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        >
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 设置环信应用的AppKey -->
+        <!-- 线上的环信key -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="gaiamount#gaiamount" />
+        <!-- 线下的环信key -->
+        <!--
+            <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="123456789111000#gaiamount123456789" />
+        -->
+
+
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".gaia_main.signin_signup.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".gaia_main.signin_signup.ResetPwdActivity"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".gaia_main.search.old.SearchActivity"
+            android:theme="@style/AppTheme.NoActionBar.DarkStatus" />
+        <activity
+            android:name=".dialogs.CountryPickerDlg"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".receivers.VolChangeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".module_user.user_edit.SendMailSuccessActivity"
+            android:label="@string/title_activity_send_mail_success" />
+        <activity
+            android:name=".module_user.personal.PersonalActivity"
+            android:screenOrientation="portrait" />
+        <!-- android:theme="@style/MaterialAnimation" -->
+        <activity
+            android:name=".module_workpool.WorkPoolActivity"
+            android:label="@string/title_activity_work_pool" />
+        <activity
+            android:name=".module_user.user_edit.UserInfoEditActivity"
+            android:theme="@style/AppTheme.Float" />
+        <activity
+            android:name=".module_down_up_load.upload.UploadActivity"
+            android:label="@string/title_activity_upload" />
+        <activity
+            android:name=".module_down_up_load.upload.UploadEditActivity"
+            android:theme="@style/AppTheme.Float" />
+        <activity
+            android:name=".module_down_up_load.upload_manage.UploadManagerActivity"
+            android:label="@string/title_activity_upload_manage"
+            android:launchMode="singleInstance" />
+
+        <service
+            android:name=".service.UploadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".gaia_main.home.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gaia_main.signin_signup.SignUpStep1Activity"
+            android:label="@string/title_activity_sign_up_step1"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".gaia_main.signin_signup.SignUpStep2Activity"
+            android:label="@string/title_activity_sign_up_step2"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".gaia_main.signin_signup.SignUpStep3Activity"
+            android:label="@string/title_activity_sign_up_step3"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".module_user.personal.PersonalWorksActivity"
+            android:label="@string/title_activity_create"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".gaia_main.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".gaia_main.home.SplashActivity"
+            android:configChanges="screenSize|orientation|keyboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module_user.user_edit.UserInfoActivity"
+            android:label="@string/title_activity_edit_info"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".module_user.personal.CollectionActivity"
+            android:label="@string/collection_list"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module_im.message_center.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:launchMode="singleTask" />
+        <activity android:name=".module_im.official.ChatActivity" />
+        <activity
+            android:name=".module_charge.account_book.AccountActivity"
+            android:label="@string/title_activity_bank_account"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity android:name=".module_user.user_edit.BankAccountEditActivity" />
+        <activity
+            android:name=".module_charge.account_book.AccountBookActivity"
+            android:label="@string/title_activity_account_book"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name=".module_down_up_load.download.DownloadActivity"
+            android:label="下载管理" />
+        <activity
+            android:name=".module_down_up_load.upload_manage.WorkSettingStep1Activity"
+            android:label="@string/title_activity_work_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".module_down_up_load.upload_manage.WorkSettingStep2Activity"
+            android:label="@string/title_activity_back"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".module_creator.CreatorActivity"
+            android:label="@string/title_activity_account_creator"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name=".module_creator.sub_module_group.activities.GroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".module_creator.sub_module_group.activities.GroupCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module_creator.sub_module_group.activities.GroupEditActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".module_creator.sub_module_group.activities.GroupMoreActivity" />
+        <activity android:name=".module_creator.sub_module_group.activities.GroupMemberActivity" />
+        <activity
+            android:name=".module_creator.GroupCreationsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".module_creator.sub_module_album.AlbumListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module_creator.sub_module_album.AlbumDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module_creator.sub_module_album.SetUpAlbumActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".module_player.VideoActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@mipmap/ic_launcher"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".gaia_main.settings.about_us.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gaia_main.settings.about_us.AgreementActivity"
+            android:theme="@style/mTransparent" />
+        <activity
+            android:name=".gaia_main.settings.about_us.CallUsActivity"
+            android:theme="@style/mTransparent" />
+        <activity
+            android:name=".gaia_main.settings.about_us.QuestionBackActivity"
+            android:theme="@style/mTransparent" />
+        <activity
+            android:name=".gaia_main.settings.about_us.UseAgreementActivity"
+            android:theme="@style/mTransparent" />
+        <activity
+            android:name=".gaia_main.settings.about_us.UserSendAgreementActivity"
+            android:theme="@style/mTransparent" />
+        <activity
+            android:name=".gaia_main.settings.about_us.IntroduceActivity"
+            android:theme="@style/mTransparent" />
+        <activity android:name=".module_im.secret_chat.MySecretActivity" />
+        <activity
+            android:name=".module_im.secret_chat.activity.ContactChatActivity"
+            android:theme="@style/mTransparent" />
+        <activity android:name=".module_creator.sub_module_mygroup.MyGroupActivity" />
+        <activity
+            android:name=".gaia_main.search.GlobalSearchActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".module_im.secret_chat.activity.GroupChatActivity" />
+        <activity
+            android:name=".gaia_main.settings.PrivateSettingsActivity"
+            android:theme="@style/AppTheme.ActionBar">
+            <intent-filter>
+                <action android:name="com.gaia_main.settings.PrivateSettings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gaia_main.history.HistoryActivity" />
+        <activity android:name=".module_creator.creater_circle.activity.CircleActivity" />
+        <activity android:name=".module_im.secret_chat.activity.KillFriActivity" />
+        <activity android:name=".module_academy.AcademyActivity" />
+        <activity android:name=".module_academy.activity.MixingLightActivity" />
+        <activity android:name=".module_academy.activity.MyLessonActivity" />
+        <activity android:name=".module_academy.activity.AcademyDetailActivity" />
+        <activity
+            android:name=".module_academy.activity.AcademyPlayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        /*测试的学院播放*/
+        <activity
+            android:name=".module_academy.activity.AcademyNewPlayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <activity android:name=".module_academy.academy_contribution.ContributionActivity" />
+        <activity android:name=".module_user.person_creater.PersonActivity" />
+        <activity android:name=".module_academy.activity.TuWenDetailActivity" />
+        <activity android:name=".module_creator.sub_module_album.AlbumDetailMoreActivity" />
+        <activity android:name=".module_creator.sub_module_group.activities.GroupExamineActivity" />
+        <activity android:name=".module_material.activity.MaterialVideosActivity" />
+        <activity
+            android:name=".module_material.activity.MaterialPlayActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".module_material.MaterialMainActivity" />
+        <activity android:name=".module_material.activity.MaterialModelActivity" />
+        <activity android:name=".module_user.personal_album.PersonalAlbumActivity" />
+        <activity android:name=".module_im.my_attention.AttentionActivity" />
+        <activity android:name=".module_im.new_friends.GroupActionActivity" />
+        <activity android:name=".module_im.relate_me.RelateActivity" />
+        <activity android:name=".module_im.comment_message.CommMessActivity" />
+        <activity android:name=".module_scripe.ScripeActivity" />
+        <activity android:name=".module_scripe.activity.ScripeListActivity" />
+        <activity android:name=".module_scripe.activity.ScripeContentActivity" />
+        <activity android:name=".module_scripe.activity.ScripeDetailActivity" />
+        <activity android:name=".module_user.notes.NotesListActivity" />
+        <activity android:name=".module_user.notes.NoteDetailActivity" />
+        <activity android:name=".module_user.notes.NotesCommentActivity" />
+        <activity android:name=".module_im.scripe_apply.ScripeApplyActivity" />
+        <activity android:name=".module_im.system_group_message.SysGroupMessActivity" />
+        <activity android:name=".module_im.new_friends.FansActivity" />
+        <activity android:name=".module_circle.CircleActionActivity" />
+        <activity android:name=".module_user.personal_album.activity.PersonAlbumDetailActivity" />
+        <activity android:name=".module_im.secret_chat.activity.ChatImageActivity" />
+    </application>
+
+</manifest>

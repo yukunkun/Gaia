@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--kun-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_head"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="37dp"
+        android:layout_height="37dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/comment_name"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_666666"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/comment_time"
+                android:textSize="10sp"
+                android:textColor="@color/color_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RatingBar
+                android:id="@+id/comment_ratingbar"
+                android:layout_marginLeft="10dp"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/comment_grade"
+                android:textColor="@color/color_ff5773"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="18dp"
+            android:id="@+id/comment_content"
+            android:textSize="14sp"
+            android:autoLink="web"
+            android:textColor="@color/color_313333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

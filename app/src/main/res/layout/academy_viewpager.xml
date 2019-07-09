@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--kun-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/academy_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <TextView
+            android:layout_alignBottom="@id/academy_viewpager"
+            android:background="@drawable/shape_academy_play_down"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <include layout="@layout/academy_devide_icon"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--toolbar的高度-->
+    <dimen name="toolbar_default_height">64dp</dimen>
+    <!--toolbar的title默认字体大小-->
+    <dimen name="toolbar_title_defalut_size">20sp</dimen>
+    <dimen name="global_search_et_height">35dp</dimen>
+    <dimen name="global_search_et_wrapper_height">56dp</dimen>
+    <!--搜索框的提示字体-->
+    <dimen name="search_hint">14sp</dimen>
+    <!--tab栏的高度-->
+    <dimen name="tab_height">44dp</dimen>
+    <dimen name="replay_ic_width">60dp</dimen>
+
+    <!--cpb的默认宽度-->
+    <dimen name="cpb_default_width">64dp</dimen>
+</resources>

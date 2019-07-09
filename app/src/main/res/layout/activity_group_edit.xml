@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy 编辑小组资料-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:orientation="vertical"
+    tools:context=".module_creator.sub_module_group.activities.GroupEditActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/AppTheme.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:minHeight="48dp"
+        app:navigationIcon="@mipmap/ic_arrow_back_accent_24dp">
+
+        <TextView
+            android:id="@+id/group_edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_user_info"
+            android:textColor="@color/text_313333"
+            android:textSize="16sp"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:background="@color/a1a1a1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <FrameLayout
+        android:id="@+id/edit_group_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom|left"
+                android:paddingStart="15dp"
+                android:text="@string/basic_info"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/text_999"/>
+
+            <include layout="@layout/item_add_group_name"/>
+
+            <include layout="@layout/item_add_group_keywords"/>
+
+            <include layout="@layout/item_add_group_description"/>
+
+
+            <!--图片-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:onClick="clickToSetCover"
+                tools:showIn="@layout/activity_add_group">
+
+                <TextView
+                    style="@style/textAppearance_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改小组封面"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/pointer_gray_right"/>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/group_edit_cover"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <ProgressBar
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/group_edit_progress"
+                    android:progressDrawable="@drawable/progress"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:max="100"
+                    android:minHeight="6dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="40"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom|left"
+                android:paddingStart="15dp"
+                android:text="设置和模式"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/text_999"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:onClick="clickToSetAdmin"
+                tools:showIn="@layout/activity_add_group">
+
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/textAppearance_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_set"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/pointer_gray_right"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@id/text"
+                    android:background="@color/c8c7cc"/>
+
+            </RelativeLayout>
+
+            <!--成员加入模式-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:onClick="clickToSetAddMode"
+                tools:showIn="@layout/activity_add_group">
+
+                <TextView
+                    android:id="@+id/text2"
+                    style="@style/textAppearance_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成员加入模式"/>
+
+                <TextView
+                    android:id="@+id/group_edit_is_examine"
+                    style="@style/textAppearance_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@id/text2"
+                    android:background="@color/c8c7cc"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

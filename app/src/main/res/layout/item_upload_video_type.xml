@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/item_upload_video_type"
+        style="@style/item_style"
+        android:clickable="true"
+        android:onClick="VideoType">
+
+        <TextView
+            style="@style/textAppearance_one"
+            android:id="@+id/textview1"
+            android:text="@string/video_type"
+            />
+
+        <ImageView
+            android:id="@+id/btn_more"
+            style="@style/item_right_pointer" />
+
+        <TextView
+            android:id="@+id/text_video_type"
+            style="@style/textAppearance_two"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@id/btn_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/item_style"
+        android:id="@+id/item_upload_work_info"
+>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:text="@string/work_info"
+            style="@style/textAppearance_one"/>
+
+        <ImageView
+            android:id="@+id/pointer2"
+            style="@style/item_right_pointer"/>
+
+    </RelativeLayout>
+
+    <!--下载设置-->
+    <include layout="@layout/item_upload_download_set" />
+</LinearLayout>

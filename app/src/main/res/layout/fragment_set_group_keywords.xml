@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_light"
+                android:orientation="vertical">
+
+   <!-- <com.gaiamount.widgets.improved.ChipsMultiAutoCompleteTextview
+        android:paddingStart="10dp"
+        android:background="@color/white"
+        android:id="@+id/fragment_set_group_keywords_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/set_tag_hint" />-->
+    <EditText
+        android:paddingStart="10dp"
+        android:background="@color/white"
+        android:id="@+id/fragment_set_group_keywords_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/set_tag_hint" />
+    <TextView
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

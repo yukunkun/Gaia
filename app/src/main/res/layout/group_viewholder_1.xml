@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/action_title"
+        android:text="申请加入"
+        android:paddingLeft="15dp"
+        android:background="@color/back_all"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.gaiamount.widgets.improved.NOScrolledListView
+        android:id="@+id/action_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

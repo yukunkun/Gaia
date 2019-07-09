@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--lhy:-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_margin="4dp"
+              android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="作品名称在这里作品名称在这里"
+        android:ems="10"
+        android:lines="1"
+        android:id="@+id/account_history_name"
+        android:textColor="@color/text_333"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2013/01/2 12:30"
+        android:id="@+id/account_history_time"
+        android:layout_alignBottom="@+id/account_history_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="付款人：彩云之南"
+        android:id="@+id/account_history_to"
+        android:layout_below="@+id/account_history_time"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="类型：作品"
+        android:id="@+id/account_history_type"
+        android:layout_below="@+id/account_history_to"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="收款方：平安银行"
+        android:id="@+id/account_history_bank"
+        android:layout_below="@+id/account_history_type"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="单号:83333333"
+        android:id="@+id/account_history_order"
+        android:layout_below="@+id/account_history_bank"
+        android:layout_alignStart="@+id/account_history_type"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="金额：22.2元"
+        android:id="@+id/account_history_money"
+        android:layout_below="@+id/account_history_order"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="规格：1080p"
+        android:id="@+id/account_history_spec"
+        android:layout_alignTop="@+id/account_history_type"
+        android:layout_toStartOf="@+id/account_history_time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="状态：已结款"
+        android:id="@+id/account_history_status"
+        android:layout_alignTop="@+id/account_history_money"
+        android:layout_alignStart="@+id/account_history_spec"/>
+
+    <View
+        android:layout_below="@id/account_history_status"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line"
+        />
+</RelativeLayout>
