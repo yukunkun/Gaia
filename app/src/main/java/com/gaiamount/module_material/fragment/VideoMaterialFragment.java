@@ -186,8 +186,6 @@ public class VideoMaterialFragment extends Fragment {
     private void setListener() {
         recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
 
-
-
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);

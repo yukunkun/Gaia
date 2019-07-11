@@ -171,8 +171,7 @@
             android:theme="@style/AppTheme.ActionBar" />
         <activity
             android:name=".gaia_main.settings.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.ActionBar" />
+            android:label="@string/title_activity_settings" />
         <activity
             android:name=".gaia_main.home.SplashActivity"
             android:configChanges="screenSize|orientation|keyboard"
@@ -258,47 +257,64 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.settings.about_us.AgreementActivity"
-            android:theme="@style/mTransparent" />
+            android:theme="@style/mTransparent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.settings.about_us.CallUsActivity"
-            android:theme="@style/mTransparent" />
+            android:theme="@style/mTransparent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.settings.about_us.QuestionBackActivity"
-            android:theme="@style/mTransparent" />
+            android:theme="@style/mTransparent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.settings.about_us.UseAgreementActivity"
-            android:theme="@style/mTransparent" />
+            android:theme="@style/mTransparent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.settings.about_us.UserSendAgreementActivity"
-            android:theme="@style/mTransparent" />
+            android:theme="@style/mTransparent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.settings.about_us.IntroduceActivity"
-            android:theme="@style/mTransparent" />
-        <activity android:name=".module_im.secret_chat.MySecretActivity" />
+            android:theme="@style/mTransparent"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.secret_chat.MySecretActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".module_im.secret_chat.activity.ContactChatActivity"
             android:theme="@style/mTransparent" />
-        <activity android:name=".module_creator.sub_module_mygroup.MyGroupActivity" />
+        <activity android:name=".module_creator.sub_module_mygroup.MyGroupActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.search.GlobalSearchActivity"
-            android:windowSoftInputMode="stateVisible" />
-        <activity android:name=".module_im.secret_chat.activity.GroupChatActivity" />
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.secret_chat.activity.GroupChatActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".gaia_main.settings.PrivateSettingsActivity"
-            android:theme="@style/AppTheme.ActionBar">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.gaia_main.settings.PrivateSettings" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".gaia_main.history.HistoryActivity" />
-        <activity android:name=".module_creator.creater_circle.activity.CircleActivity" />
-        <activity android:name=".module_im.secret_chat.activity.KillFriActivity" />
-        <activity android:name=".module_academy.AcademyActivity" />
-        <activity android:name=".module_academy.activity.MixingLightActivity" />
-        <activity android:name=".module_academy.activity.MyLessonActivity" />
-        <activity android:name=".module_academy.activity.AcademyDetailActivity" />
+        <activity android:name=".gaia_main.history.HistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_creator.creater_circle.activity.CircleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.secret_chat.activity.KillFriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_academy.AcademyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_academy.activity.MixingLightActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_academy.activity.MyLessonActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_academy.activity.AcademyDetailActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".module_academy.activity.AcademyPlayActivity"
             android:launchMode="singleTask"
@@ -308,36 +324,62 @@
             android:name=".module_academy.activity.AcademyNewPlayActivity"
             android:launchMode="singleTask"
             android:screenOrientation="landscape" />
-        <activity android:name=".module_academy.academy_contribution.ContributionActivity" />
-        <activity android:name=".module_user.person_creater.PersonActivity" />
-        <activity android:name=".module_academy.activity.TuWenDetailActivity" />
-        <activity android:name=".module_creator.sub_module_album.AlbumDetailMoreActivity" />
-        <activity android:name=".module_creator.sub_module_group.activities.GroupExamineActivity" />
-        <activity android:name=".module_material.activity.MaterialVideosActivity" />
+        <activity android:name=".module_academy.academy_contribution.ContributionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_user.person_creater.PersonActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_academy.activity.TuWenDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_creator.sub_module_album.AlbumDetailMoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_creator.sub_module_group.activities.GroupExamineActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_material.activity.MaterialVideosActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".module_material.activity.MaterialPlayActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
-        <activity android:name=".module_material.MaterialMainActivity" />
-        <activity android:name=".module_material.activity.MaterialModelActivity" />
-        <activity android:name=".module_user.personal_album.PersonalAlbumActivity" />
-        <activity android:name=".module_im.my_attention.AttentionActivity" />
-        <activity android:name=".module_im.new_friends.GroupActionActivity" />
-        <activity android:name=".module_im.relate_me.RelateActivity" />
-        <activity android:name=".module_im.comment_message.CommMessActivity" />
-        <activity android:name=".module_scripe.ScripeActivity" />
-        <activity android:name=".module_scripe.activity.ScripeListActivity" />
-        <activity android:name=".module_scripe.activity.ScripeContentActivity" />
-        <activity android:name=".module_scripe.activity.ScripeDetailActivity" />
-        <activity android:name=".module_user.notes.NotesListActivity" />
-        <activity android:name=".module_user.notes.NoteDetailActivity" />
-        <activity android:name=".module_user.notes.NotesCommentActivity" />
-        <activity android:name=".module_im.scripe_apply.ScripeApplyActivity" />
-        <activity android:name=".module_im.system_group_message.SysGroupMessActivity" />
-        <activity android:name=".module_im.new_friends.FansActivity" />
-        <activity android:name=".module_circle.CircleActionActivity" />
-        <activity android:name=".module_user.personal_album.activity.PersonAlbumDetailActivity" />
-        <activity android:name=".module_im.secret_chat.activity.ChatImageActivity" />
+        <activity android:name=".module_material.MaterialMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_material.activity.MaterialModelActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_user.personal_album.PersonalAlbumActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.my_attention.AttentionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.new_friends.GroupActionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.relate_me.RelateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.comment_message.CommMessActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_scripe.ScripeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_scripe.activity.ScripeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_scripe.activity.ScripeContentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_scripe.activity.ScripeDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_user.notes.NotesListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_user.notes.NoteDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_user.notes.NotesCommentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.scripe_apply.ScripeApplyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.system_group_message.SysGroupMessActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.new_friends.FansActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_circle.CircleActionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_user.personal_album.activity.PersonAlbumDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".module_im.secret_chat.activity.ChatImageActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

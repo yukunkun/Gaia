@@ -3,9 +3,11 @@ package com.gaiamount.util.network;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.util.Log;
 
 import com.gaiamount.R;
 import com.gaiamount.gaia_main.GaiaApp;
+import com.gaiamount.util.LogUtil;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -97,6 +99,7 @@ public class NetworkUtils {
         aHttpClient.setMaxRetriesAndTimeout(1,5000);
         if (!GaiaApp.getToken().equals("")) {//如果有cookie，则带上
             aHttpClient.addHeader("Set-Cookie", GaiaApp.getToken());
+            Log.i("=====",GaiaApp.getToken());
         }
         try {
             String jsonString = jsonObject.toString();
